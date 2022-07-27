@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import {RiVideoAddFill} from 'react-icons/ri'
-import Footer from '../Components/Footer'
+import Footer from '../components/Footer'
 export default function HomePage() {
     const router = useRouter()
     const [joinRoomName, setjoinRoomName] = useState('')

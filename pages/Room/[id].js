@@ -1,9 +1,9 @@
 import { CircularProgress } from '@mui/material';
 import React, { createRef, useEffect, useRef, useState } from 'react'
 import { io } from "socket.io-client";
-import BottomControlBar from '../../Components/BottomControlBar';
-import Video from '../../Components/Video';
-import WaitingRoomControl from '../../Components/WaitingRoomControl';
+import BottomControlBar from '../../components/BottomControlBar';
+import Video from '../../components/Video';
+import WaitingRoomControl from '../../components/WaitingRoomControl';
 import { v4 as uuid } from 'uuid';
 import {useRouter} from 'next/router'
 

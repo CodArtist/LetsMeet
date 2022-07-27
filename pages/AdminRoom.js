@@ -1,9 +1,9 @@
 import React, { createRef, useEffect, useRef, useState } from 'react'
 import { io } from "socket.io-client";
-import Video from '../Components/Video';
-import BottomControlBar from '../Components/BottomControlBar';
-import ShareMeetingLinkCard from '../Components/ShareMeetingLinkCard';
-import CallsBottomModal from '../Components/CallsBottomModal';
+import Video from '../components/Video';
+import BottomControlBar from '../components/BottomControlBar';
+import ShareMeetingLinkCard from '../components/ShareMeetingLinkCard';
+import CallsBottomModal from '../components/CallsBottomModal';
 import { useRouter } from 'next/router'
 import { v4 as uuid } from 'uuid';
 
