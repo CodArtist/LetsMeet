@@ -75,7 +75,7 @@ function ShareMeetingLinkCard({ MeetingLink }) {
                         <div className=' text-sm text-gray-500'>Share this Link</div>
                         <div className=' flex flex-row items-center space-x-5 sm:w-full'>
                             <div className=' flex sm:w-full p-2 bg-gray-300 w-5/6 rounded-lg overflow-auto '>
-                                {"https://2126-2405-201-301ae0c1-ac27-8513-3bb1-3a3c.in.ngrok.io/Room/b05255f4-d447-4008-a640-1176ca2f3d7b"}
+                                {MeetingLink}
                                 </div>
                             <FiCopy className=' cursor-pointer' color='black' onClick={() => {
                                 navigator.clipboard.writeText(MeetingLink)
