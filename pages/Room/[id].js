@@ -254,8 +254,7 @@ export default function Room({ id }) {
 
       <div className={
         waiting ? 'flex flex-col space-y-7 p-5 items-center h-screen w-screen bg-white' :
-          videoRefs_Ref.current.length >= 4 ? "grid grid-rows-4 grid-flow-col sm:grid-cols-4 sm:grid-flow-row gap-1 bg-white w-full h-full sm:row-span-6 " :
-            `w-full h-full grid grid-rows-${2} grid-flow-col sm:grid-cols-${2} sm:grid-flow-row gap-4 bg-white`}
+         "grid grid-rows-4 grid-flow-col sm:grid-cols-4 sm:grid-flow-row gap-1 bg-white w-full h-full sm:row-span-6 "}
       >
 
 
