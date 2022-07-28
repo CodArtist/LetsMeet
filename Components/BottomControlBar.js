@@ -75,10 +75,14 @@ export default function BottomControlBar({ videoReference,peersConnections,initi
                  
                 
                 }}/> }
-            <Link href='/HomePage' className='flex cursor-pointer bg-red-600 rounded-full w-8 h-8 justify-center items-center'
-           >
-        
-            <MdCallEnd color='white'/>
+            <Link href='/HomePage'>
+             <div onClick={()=>{
+                videoReference.current.srcObject.getTracks()[1].stop()
+                videoReference.current.srcObject.getTracks()[0].stop()
+
+             }}>
+            <MdCallEnd color='white'  className='flex cursor-pointer bg-red-600 rounded-full w-8 h-8 justify-center items-center p-1'/>
+            </div>
             </Link>
         </div>
         </div>
