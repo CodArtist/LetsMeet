@@ -263,8 +263,7 @@ export default function AdminRoom() {
 
   return (
     <div className=' h-screen w-screen bg-white'>
-      <div className={videoRefs_Ref.current.length >= 4 ? "grid grid-rows-4 grid-flow-col sm:grid-cols-4 sm:grid-flow-row gap-1 bg-white w-full h-full sm:row-span-6 " :
-       `w-full h-full grid grid-rows-${2} grid-flow-col sm:grid-cols-${2} sm:grid-flow-row gap-4 bg-white`}>
+      <div className={"grid grid-rows-4 grid-flow-col sm:grid-cols-4 sm:grid-flow-row gap-1 bg-white w-full h-full sm:row-span-6"}>
 
 
         {
