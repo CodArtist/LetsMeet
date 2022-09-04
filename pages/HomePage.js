@@ -14,11 +14,11 @@ export default function HomePage() {
                 <p className="w-40 h-8 text-2xl font-extrabold text-gray-600 mb-4" style={{ 'fontFamily': 'Poppins' }}>LetsMeet</p>
                 <p className="text-sm text-black" style={{ 'fontFamily': 'Roboto' }}>A Web App made for video Conference meetings<br />To do a Conference, Just Create a meeting and share the link with your friends</p>
 
-                <div className=' flex flex-col space-y-5 justify-start items-start'>
-                <input type={'text'} className={' border-none outline-none bg-gray-200 p-2 text-black w-8/12'} placeholder={"Enter Name"} onChange={(e) => {
+                <div className=' flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-3 sm:justify-center sm:items-center justify-center items-center w-full sm:w-auto'>
+                <input type={'text'} className={' border-none outline-none bg-gray-200 p-2 text-black sm:w-8/12 w-full h-12'} placeholder={"Enter Name"} onChange={(e) => {
                         setmyName(e.target.value)
                     }} />
-                    <div className="flex flex-row space-x-3 items-center justify-center h-12 p-5 bg-purple-600 shadow-lg rounded-full cursor-pointer" 
+                    <div className="flex flex-row space-x-3 items-center justify-center h-12 p-5 sm:w-52 bg-purple-600 shadow-lg rounded-full cursor-pointer" 
                     onClick={() => {
                          if(myName.trim().length===0)
                         alert("Please Provide your name to create a meeting")
@@ -50,8 +50,11 @@ export default function HomePage() {
 
             </div>
             <div className=' flex flex-row justify-between items-end sm:w-1/2 h-full'>
-                <img className='  w-1/2 sm:w-2/5 z-0' src={"/Man.png"} />
-                <img className='  w-1/2 sm:w-2/5 z-0' src={"/Women.png"} />
+                
+                <div className='w-full'>
+                <img className=' h-64 sm:h-full w-full z-0' src={"/People.png"} />
+                </div>
+
             </div>
 
            
